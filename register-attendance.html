@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/style.css" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Didact Gothic"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <!-- <script src="https://maps.google.com/maps/api/js?sensor=false"></script> -->
+    <!-- Title -->
+    <title>Chamada Automática | Registro</title>
+  </head>
+
+  <aside id="sidebarContainer"></aside>
+  <header id="navbarContainer"></header>
+
+  <body>
+    <!-- Map -->
+    <div class="d-flex justify-content-center">
+      <div class="card m-4">
+        <div class="card-header d-flex justify-content-center">
+          <div>
+            <h3 id="horaAtual" class="card-title d-flex justify-content-center">
+              00:00:00
+            </h3>
+            <h6
+              id="dataAtual"
+              class="card-subtitle mb-2 text-muted d-flex justify-content-center"
+            >
+              01/Jan/2023
+            </h6>
+            <h5 id="username" class="card-text d-flex justify-content-center">
+              Usuário
+            </h5>
+          </div>
+        </div>
+        <div class="card-body">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115300.32170917495!2d-49.42800040273436!3d-25.433747999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce472e85bb7eb%3A0x78328b9f96a47e4d!2sUniversidade%20Positivo%20-%20Pra%C3%A7a%20Os%C3%B3rio!5e0!3m2!1spt-BR!2sbr!4v1684281734604!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <!-- Current Location Button -->
+          <!-- <div class="d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-primary m-4"
+              onclick="getlocation()"
+            >
+              Current Position
+            </button>
+          </div> -->
+          <!-- Current Location Map -->
+          <!-- <div id="demo2" style="width: 500px; height: 500px"></div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <!-- Return Button -->
+      <a href="daily-frequency.html" type="button" class="btn btn-primary mx-4">
+        <i class="bi bi-caret-left-fill"></i>
+        <span>Voltar</span>
+      </a>
+      <!-- Confirmation Button -->
+      <a href="register-photo.html" type="button" class="btn btn-primary">
+        <span>Próximo</span>
+        <i class="bi bi-caret-right-fill"></i>
+      </a>
+    </div>
+  </body>
+
+  <footer id="footerContainer"></footer>
+</html>
