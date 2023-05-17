@@ -33,7 +33,7 @@ function loadNavbar() {
       navbarContainer.innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "/components/navbar.html", true);
+  xhttp.open("GET", "./components/navbar.html", true);
   xhttp.send();
 }
 // Load Footer
@@ -45,7 +45,7 @@ function loadFooter() {
       navbarContainer.innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "/components/footer.html", true);
+  xhttp.open("GET", "./components/footer.html", true);
   xhttp.send();
 }
 
@@ -58,7 +58,7 @@ function loadSidebar() {
       sidebarContainer.innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "/components/sidebar.html", true);
+  xhttp.open("GET", "./components/sidebar.html", true);
   xhttp.send();
 }
 
